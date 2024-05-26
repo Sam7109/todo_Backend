@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 8081;
 app.use(express.json());
 app.use(cors());
-app.use("/api", todoRoutes); 
+app.use("/apis", todoRoutes); 
 app.listen(port, async () => {
   try {
     await connectDB();

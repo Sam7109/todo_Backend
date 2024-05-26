@@ -8,5 +8,5 @@ router.post(
 
 router.get("/gettodo", todoController.gettoDo);
 // router.patch("/products/:productId", todoController.editProduct);
-// router.delete("/products/:productId", todoController.deleteProduct);
-module.exports = router;
+router.delete("/remove/:recordId",todoController.deleteRecord)
+module.exports = router; 

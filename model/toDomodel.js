@@ -8,3 +8,8 @@ const todoSchema = new mongoose.Schema({
 });
 const  todo = mongoose.model("todoApp", todoSchema);
 module.exports = todo;
+
+// import mongoose library 
+// declare the mongo Schema
+// create a model using the schema
+
